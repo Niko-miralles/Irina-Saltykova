@@ -46,7 +46,8 @@ nav .btn{padding:12px 28px;font-size:13px}
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:48px}}
 .hero h1{font-size:clamp(46px,6.2vw,84px);margin:24px 0 28px}
-.hero h1 em{font-style:italic;color:var(--gold)}
+.hero h1 em,.hero-accent{font-style:italic;color:var(--gold)}
+.hero-accent{font-family:'Cormorant Garamond',serif;font-size:clamp(46px,6.2vw,84px);line-height:1.15;margin:-22px 0 28px}
 .hero p{max-width:540px;color:var(--muted);font-size:19px;margin-bottom:44px}
 .hero-photo{position:relative}
 .hero-photo img{border-radius:200px 200px 24px 24px;width:100%;height:640px;object-fit:cover;object-position:top}
@@ -103,8 +104,9 @@ h2.big{font-size:clamp(38px,4.5vw,58px);margin:18px 0 26px}
 .cta-photo{position:relative;min-height:560px;display:flex;align-items:center;justify-content:center;text-align:center;background:url('https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=2000&q=80') center 40%/cover no-repeat}
 .cta-photo::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(20,17,14,.55),rgba(20,17,14,.55))}
 .cta-photo .inner{position:relative;color:var(--cream);padding:80px 32px}
-.cta-photo h2{font-size:clamp(40px,5vw,66px);margin-bottom:18px}
+.cta-photo h2{font-size:clamp(40px,5vw,66px);margin-bottom:6px}
 .cta-photo h2 em{color:var(--gold-soft);font-style:italic}
+.cta-accent{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,5vw,66px);line-height:1.15;font-style:italic;color:var(--gold-soft);margin-bottom:18px}
 .cta-photo p{color:rgba(247,243,236,.85);margin-bottom:44px}
 .cta-photo .btn-dark{background:var(--cream);border-color:var(--cream);color:var(--ink)}
 .cta-photo .btn-dark:hover{background:var(--gold);border-color:var(--gold);color:var(--ink)}
@@ -175,7 +177,8 @@ body.loading{overflow:hidden}
   <div class="wrap hero-grid">
     <div>
       <span class="eyebrow">Mental Coach · Athletes · Coaches · Teams</span>
-      <h1>The mind is your<br><em>strongest muscle</em></h1>
+      <h1>The mind is your</h1>
+      <div class="hero-accent">strongest muscle</div>
       <p>I help athletes, coaches and sports teams build the mindset, cohesion and strategy they need to reach the results they want.</p>
       <a class="btn btn-dark" href="https://wa.me/34655615977?text=Hi%20Irina%2C%20I%27d%20like%20to%20book%20a%20free%20intro%20meeting" target="_blank" rel="noopener">Book a free meeting →</a>
     </div>
@@ -297,7 +300,8 @@ body.loading{overflow:hidden}
 
 <section class="cta-photo" style="padding:0">
   <div class="inner">
-    <h2>Ready to perform<br>at your <em>best?</em></h2>
+    <h2>Ready to perform</h2>
+    <div class="cta-accent">at your best?</div>
     <p>Every collaboration starts with a free, no-obligation intro meeting.</p>
     <a class="btn btn-dark" href="https://wa.me/34655615977?text=Hi%20Irina%2C%20I%27d%20like%20to%20book%20a%20free%20intro%20meeting" target="_blank" rel="noopener">Book a free meeting →</a>
   </div>
