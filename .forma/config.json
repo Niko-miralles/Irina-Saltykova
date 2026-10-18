@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "repository": "Niko-miralles/Irina-Saltykova",
+  "root": "",
+  "framework": "Static HTML",
+  "entry": "index.html",
+  "publicDir": "",
+  "siteUrl": "https://irina-coach-ryply1.vercel.app/",
+  "editorOrigin": "https://formacms.app",
+  "contentPath": "forma/content.json"
+}
